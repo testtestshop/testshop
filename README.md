@@ -7,7 +7,7 @@
 Для сборки использовать [maven](https://maven.apache.org/) команду: ```mvn package```  
 Итоговый ```.war``` перенести в каталог ```/webapps``` на сервере.
 
-В каталоге ```src/main/resources/import.sql``` находятся данные по умолчанию.
+В файле ```src/main/resources/import.sql``` находятся данные по умолчанию.
 
 # TODO list
 
@@ -30,9 +30,9 @@
 
 # Frameworks and libraries
 
-* Spring Boot
+* [Spring Boot](http://projects.spring.io/spring-boot/)
 * Spring Data JPA
-* Thymeleaf
+* [Thymeleaf](www.thymeleaf.org)
 * Hibernate ORM
 * Hibernate Validator
 * Bootstrap
