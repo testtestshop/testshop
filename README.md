@@ -14,8 +14,8 @@
 	
 # TODO list
 
-* Сделать Side Menu с фильтром товаров по категориям и заказы по пользователям
-* Сделать локализацию (l18n) [MessageSource](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/MessageSource.html)
+* Side Menu с фильтром товаров по категориям и заказы по пользователям
+* Локализацию (l18n) [MessageSource](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/MessageSource.html)
 * Создание и назначение категории товару через связь @ManyToMany
 * Авто очистка старых записей в базе
 * Validation всех форм
@@ -24,7 +24,7 @@
 * Настроить connection pool [HikariCP](https://brettwooldridge.github.io/HikariCP/)
 * Вынести часть логики из @Controller в @Service
 * Расставить ограничения на значения базы данных
-* Перехват ошибок транзакций через @ControllerAdvice и @ExceptionHandler(MyExeption.class)
+* Перехват ошибок транзакций через @ControllerAdvice и @ExceptionHandler
 * Создать страницу с описанием ошибок /error
 * Сделать загрузку картинок
 * Отобразить количество заказов в nav bar
