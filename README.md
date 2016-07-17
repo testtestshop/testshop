@@ -7,7 +7,7 @@
 Для сборки использовать [maven](https://maven.apache.org/) команду: ```mvn package```  
 Итоговый ```.war``` перенести в каталог ```/webapps``` на сервере.
 
-Найти и изменить конфигурацию базы данных можно в файле src/main/java/com/testshop/config/DBConfig.java
+Найти и изменить конфигурацию базы данных можно в файле ```src/main/java/com/testshop/config/DBConfig.java```
 База данных по умолчанию:  
 ```properties
 	db.name=jdbc:mysql://localhost:3306/testshop
