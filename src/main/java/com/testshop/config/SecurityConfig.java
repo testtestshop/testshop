@@ -36,10 +36,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers("/login", "/", "/index**", "/j_spring_security_check", "/j_spring_security_logout", "/api/login**", "/403**").permitAll()
 			.antMatchers("/css/**", "/js/**","/fonts/**","/img/**").permitAll()
 			.antMatchers(HttpMethod.GET, "/api/item").permitAll()
+			.antMatchers(HttpMethod.POST, "/api/task/order").access("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
 			.antMatchers(HttpMethod.GET, "/api/task/user/**").access("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
-			.antMatchers("/api/user**").access("hasRole('ROLE_ADMIN')")
+			.antMatchers("/api/user**", "/api/user/**").access("hasRole('ROLE_ADMIN')")
 			.antMatchers("/api/task**", "/api/task/**", "/api/item**").access("hasRole('ROLE_ADMIN')")
-			.antMatchers(HttpMethod.POST, "/api/task/order").access("hasRole('ROLE_USER')")
 			.antMatchers("/**").denyAll()
 			
 			.and()
