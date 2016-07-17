@@ -4,7 +4,7 @@
 
 # Сборка
 
-Для сборки использовать [maven](https://maven.apache.org/) команду: ```mvn package```
+Для сборки использовать [maven](https://maven.apache.org/) команду: ```mvn package```  
 Итоговый ```.war``` перенести в каталог ```/webapps``` на сервере.
 
 В каталоге ```src/main/resources/import.sql``` находятся данные по умолчанию.
@@ -18,7 +18,7 @@
 * Validation всех форм
 * Включить хеширование пароля bcrypt (отключено для теста)
 * Создать тесты JUnit
-* Настроить connection pool HikariPool
+* Настроить connection pool [HikariCP](https://brettwooldridge.github.io/HikariCP/)
 * Вынести часть логики из @Controller в @Service
 * Расставить ограничения на значения базы данных
 * Перехват ошибок транзакций через @ControllerAdvice и @ExceptionHandler(MyExeption.class)
@@ -27,3 +27,12 @@
 * Отобразить количество заказов в nav bar
 * Страница с отображением заказов пользователей в реальном времени (через WebSocket)
 * Изменить таблицу категорий товаров ItemList. Создание и назначение категории товару через связь @ManyToMany
+
+# Frameworks and libraries
+
+* Spring Boot
+* Spring Data JPA
+* Thymeleaf
+* Hibernate ORM
+* Hibernate Validator
+* Bootstrap
