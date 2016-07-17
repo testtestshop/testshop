@@ -7,8 +7,12 @@
 Для сборки использовать [maven](https://maven.apache.org/) команду: ```mvn package```  
 Итоговый ```.war``` перенести в каталог ```/webapps``` на сервере.
 
-В файле ```src/main/resources/import.sql``` находятся данные по умолчанию.
-
+В файле ```src/main/resources/import.sql``` находятся данные по умолчанию.  
+Пользователи по умолчанию:
+	* Имя: **admin** (с ролью ROLE_ADMIN), пароль: **testpass**
+	* Имя: **user** (с ролью ROLE_USER), пароль: **testpass**
+	
+	
 # TODO list
 
 * Сделать Side Menu с фильтром товаров по категориям и заказы по пользователям
