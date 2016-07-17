@@ -23,7 +23,7 @@
 # TODO list
 
 * Side Menu с фильтром товаров по категориям и заказы по пользователям
-* Локализацию (l18n) [MessageSource](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/MessageSource.html)
+* Интернационализация (l18n) [MessageSource](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/MessageSource.html)
 * Авто очистка старых записей в базе
 * Validation всех форм
 * Включить хеширование пароля bcrypt (отключено для теста)
