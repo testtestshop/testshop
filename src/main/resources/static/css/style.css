@@ -1,0 +1,27 @@
+[class*="btn"] {
+
+}
+[class*='col-'] {
+	padding : 3px;
+}
+.order_form, .login-form {
+	padding : 15px;
+}
+body {
+	padding-top : 100px;
+}
+#login-form-wrapper {
+	display : none;
+}
+#order_form_wrapper {
+	display : none;
+}
+.user_name {
+
+}
+.logout-button {
+	padding-left : 10px;
+}
+.hiddenDeleteTaskForm, .hiddenUpdateTaskForm {
+	display : none;
+}

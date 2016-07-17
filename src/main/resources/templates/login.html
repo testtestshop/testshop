@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:fragment="head">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" th:src="@{js/react.js}"></script>
+	<script type="text/javascript" th:src="@{js/react-dom.js}"></script>
+    <script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/browser.min.js}"></script>
+    <script type="text/babel" th:src="@{js/app.js}"></script>
+    <link href="@{css/bootstrap.min.css}" rel="stylesheet" />
+    <link href="@{css/style.css}" rel="stylesheet" />
+</head>
+<body>
+	<div layout:replace="/fragments/header :: header" >Header</div>
+	
+	<form th:action="@{/j_spring_security_check}" method="post">
+		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+      <label for="username">Username</label>:
+      <input type="text" id="username" name="username" /> <br />
+      <label for="password">Password</label>:
+      <input type="password" id="password" name="password" /> <br />
+      <input type="submit" value="Log in" />
+    </form>
+</body>
+</html>
